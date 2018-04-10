@@ -1,0 +1,22 @@
+extends layout
+
+block vars
+  - var title='Ethereum Resources'
+  - var url='resources'
+
+block content
+  include mixins/recipes.jade
+  +inner-header("Ethereum Resources")
+
+  div.main-tutorial.inner-page.foundation-page
+    div.container
+      div.row
+        div.col-md-12
+          include:md content/resources.md
+
+
+
+
+
+
+
